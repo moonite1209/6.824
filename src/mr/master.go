@@ -64,6 +64,7 @@ func MakeMaster(files []string, nReduce int) *Master {
 		}
 		inputs = append(inputs, f...)
 	}
+	var nMap = len(inputs)
 	m := Master{}
 
 	// Your code here.
