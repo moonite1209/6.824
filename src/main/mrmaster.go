@@ -2,17 +2,19 @@ package main
 
 //
 // start the master process, which is implemented
-// in ../mr/master.go
+// in 6824/src/mr/master.go
 //
 // go run mrmaster.go pg*.txt
 //
 // Please do not change this file.
 //
 
-import "../mr"
-import "time"
-import "os"
-import "fmt"
+import (
+	"6824/src/mr"
+	"fmt"
+	"os"
+	"time"
+)
 
 func main() {
 	if len(os.Args) < 2 {
